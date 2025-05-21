@@ -1,0 +1,165 @@
+{
+    "jokes": {
+      "1": {
+        "name": "Animal Adventure",
+        "questions": [
+          { "text": "What's your favorite animal?", "validation": "letters" },
+          { "text": "What's your favorite food?", "validation": "letters" },
+          { "text": "What's your favorite hobby?", "validation": "letters" },
+          { "text": "What's your dream job?", "validation": "letters" },
+          { "text": "Name a place you want to visit.", "validation": "letters" },
+          { "text": "What's your favorite movie?", "validation": "letters" },
+          { "text": "What's your best friend’s name?", "validation": "letters" },
+          { "text": "What’s a silly word you like?", "validation": "letters" },
+          { "text": "What do you hate doing?", "validation": "letters" },
+          { "text": "What's your favorite color?", "validation": "letters" }
+        ],
+        "template": "One day, a {0} who loved eating {1} and doing {2} dreamed of being a {3}. They traveled to {4}, watched {5} with {6}, shouted \"{7}!\", avoided {8}, and wore a {9} outfit all day."
+      },
+      "2": {
+        "name": "Sporty Surprise",
+        "questions": [
+          { "text": "What’s your favorite sport?", "validation": "letters" },
+          { "text": "What’s your favorite type of music?", "validation": "letters" },
+          { "text": "Who is your hero?", "validation": "letters" },
+          { "text": "What’s your dream car?", "validation": "letters" },
+          { "text": "Where did you grow up?", "validation": "letters" },
+          { "text": "Favorite childhood memory?", "validation": "any" },
+          { "text": "What’s your lucky number?", "validation": "numbers" },
+          { "text": "What’s your favorite joke?", "validation": "any" },
+          { "text": "What’s your favorite season?", "validation": "letters" },
+          { "text": "What’s your favorite ice cream flavor?", "validation": "letters" }
+        ],
+        "template": "Growing up in {4}, loving {0} and listening to {1}, my hero was {2}. I dreamed of owning a {3}, my lucky number is {6}, and my favorite season is {8}. Childhood memories of {5}, jokes about \"{7}\", and enjoying {9} ice cream fill my days."
+      },
+      "3": {
+        "name": "Bookish Buffoon",
+        "questions": [
+          { "text": "What’s your favorite book?", "validation": "letters" },
+          { "text": "What’s your favorite animal sound?", "validation": "letters" },
+          { "text": "What’s your secret talent?", "validation": "letters" },
+          { "text": "What’s your dream vacation?", "validation": "letters" },
+          { "text": "What’s your favorite dessert?", "validation": "letters" },
+          { "text": "Who do you admire most?", "validation": "letters" },
+          { "text": "What’s your favorite color?", "validation": "letters" },
+          { "text": "What’s your go-to dance move?", "validation": "letters" },
+          { "text": "What’s your guilty pleasure?", "validation": "letters" },
+          { "text": "What’s your favorite quote?", "validation": "any" }
+        ],
+        "template": "{6} the lover of {0} who imitates {1} discovered a secret talent for {2}. Dreaming of {3} and eating {4}, they admired {5}, danced {7}, indulged in {8}, and lived by the quote: \"{9}\"."
+      },
+      "4": {
+        "name": "Fruit Fiasco",
+        "questions": [
+          { "text": "What’s your favorite fruit?", "validation": "letters" },
+          { "text": "What’s your favorite TV show?", "validation": "letters" },
+          { "text": "What’s your biggest fear?", "validation": "letters" },
+          { "text": "If you had a superpower, what would it be?", "validation": "letters" },
+          { "text": "What’s your favorite holiday?", "validation": "letters" },
+          { "text": "Who inspires you?", "validation": "letters" },
+          { "text": "What’s your favorite childhood toy?", "validation": "letters" },
+          { "text": "What’s a weird food you like?", "validation": "letters" },
+          { "text": "What’s your dream house like?", "validation": "any" },
+          { "text": "What’s your favorite animal?", "validation": "letters" }
+        ],
+        "template": "Mixing {0} with watching {1} scares me more than {2}. If I had {3}, I'd celebrate {4} inspired by {5}. My childhood toy was {6}, I enjoy {7}, dream of a house like {8}, and love {9}."
+      },
+      "5": {
+        "name": "Candy Chronicles",
+        "questions": [
+          { "text": "What’s your favorite candy?", "validation": "letters" },
+          { "text": "What’s your favorite city?", "validation": "letters" },
+          { "text": "What’s your favorite hobby?", "validation": "letters" },
+          { "text": "What’s your dream job?", "validation": "letters" },
+          { "text": "Who is your best friend?", "validation": "letters" },
+          { "text": "What’s your favorite song?", "validation": "letters" },
+          { "text": "What’s your favorite movie character?", "validation": "letters" },
+          { "text": "What’s your favorite sport?", "validation": "letters" },
+          { "text": "What’s your favorite animal?", "validation": "letters" },
+          { "text": "What’s your favorite color?", "validation": "letters" }
+        ],
+        "template": "With {0} candy in {1}, I enjoyed {2}, dreamed of being a {3}, and shared laughs with {4}. Singing {5}, pretending to be {6}, playing {7}, loving {8}, and dressing in {9} made every day sweet."
+      },
+      "6": {
+        "name": "Snack Time Saga",
+        "questions": [
+          { "text": "What’s your favorite snack?", "validation": "letters" },
+          { "text": "What’s your favorite city?", "validation": "letters" },
+          { "text": "What’s your favorite sport?", "validation": "letters" },
+          { "text": "Who is your best friend?", "validation": "letters" },
+          { "text": "What’s your dream vacation spot?", "validation": "letters" },
+          { "text": "What’s your favorite movie?", "validation": "letters" },
+          { "text": "What’s your favorite animal?", "validation": "letters" },
+          { "text": "What’s your favorite book?", "validation": "letters" },
+          { "text": "What’s your favorite color?", "validation": "letters" },
+          { "text": "What’s your favorite season?", "validation": "letters" }
+        ],
+        "template": "A {9} enjoyed {0} in {1}, while cheering for {2} with {3}. Dreaming of {4}, watching {5}, loving {6}, reading {7}, wearing {8}, and feeling the {9} season all year round."
+      },
+      "7": {
+        "name": "Bar Banter",
+        "questions": [
+          { "text": "What’s your favorite food?", "validation": "letters" },
+          { "text": "What’s your favorite hobby?", "validation": "letters" },
+          { "text": "Who’s your hero?", "validation": "letters" },
+          { "text": "What’s your dream job?", "validation": "letters" },
+          { "text": "Where do you want to live?", "validation": "letters" },
+          { "text": "What’s your favorite movie?", "validation": "letters" },
+          { "text": "What’s your best friend’s name?", "validation": "letters" },
+          { "text": "What’s a silly word you like?", "validation": "letters" },
+          { "text": "What do you hate doing?", "validation": "letters" },
+          { "text": "What’s your favorite color?", "validation": "letters" }
+        ],
+        "template": "At a bar in {4}, a {0} loving {1} told {6}, their hero, \"My dream job is {3}.\" After watching {5}, they laughed and yelled \"{7}!\" but hated {8} while wearing {9}."
+      },
+      "8": {
+        "name": "Legendary Dance",
+        "questions": [
+          { "text": "What’s your favorite animal?", "validation": "letters" },
+          { "text": "What’s your favorite movie?", "validation": "letters" },
+          { "text": "What’s your favorite food?", "validation": "letters" },
+          { "text": "What’s your favorite song?", "validation": "letters" },
+          { "text": "Where do you want to travel?", "validation": "letters" },
+          { "text": "Who inspires you?", "validation": "letters" },
+          { "text": "What’s your dream job?", "validation": "letters" },
+          { "text": "What’s your favorite color?", "validation": "letters" },
+          { "text": "What’s your favorite hobby?", "validation": "letters" },
+          { "text": "What’s your favorite season?", "validation": "letters" }
+        ],
+        "template": "A {0} danced in {4} to {3}, eating {2}. Inspired by {5}, they quit being a {6} and picked up {8} while wearing {7} during the {9} season."
+      },
+      "9": {
+        "name": "Empire Builder",
+        "questions": [
+          { "text": "What’s your favorite color?", "validation": "letters" },
+          { "text": "What’s your favorite animal?", "validation": "letters" },
+          { "text": "What’s your favorite city?", "validation": "letters" },
+          { "text": "What’s your dream job?", "validation": "letters" },
+          { "text": "Who is your best friend?", "validation": "letters" },
+          { "text": "What’s your favorite hobby?", "validation": "letters" },
+          { "text": "What’s your favorite book?", "validation": "letters" },
+          { "text": "What’s your favorite food?", "validation": "letters" },
+          { "text": "What’s your favorite sport?", "validation": "letters" },
+          { "text": "What’s your favorite season?", "validation": "letters" }
+        ],
+        "template": "Building an empire in {2} with my best friend {4}, loving {1} and the color {0}. Dreaming of {3}, enjoying {5}, reading {6}, eating {7}, playing {8}, and celebrating the {9} season."
+      },
+      "10": {
+        "name": "Space Explorer",
+        "questions": [
+          { "text": "What’s your favorite planet?", "validation": "letters" },
+          { "text": "What’s your favorite spaceship?", "validation": "letters" },
+          { "text": "Who is your favorite astronaut?", "validation": "letters" },
+          { "text": "What’s your favorite alien food?", "validation": "letters" },
+          { "text": "What’s your dream space mission?", "validation": "letters" },
+          { "text": "What’s your favorite space movie?", "validation": "letters" },
+          { "text": "What’s your favorite star?", "validation": "letters" },
+          { "text": "What’s your favorite galaxy?", "validation": "letters" },
+          { "text": "What’s your favorite space hobby?", "validation": "letters" },
+          { "text": "What’s your favorite space color?", "validation": "letters" }
+        ],
+        "template": "Exploring {0} on the {1} with astronaut {2}, eating {3}, dreaming of {4}. Watching {5}, admiring {6} in {7}, enjoying {8}, and loving the color {9} of space."
+      }
+    }
+  }
+  
