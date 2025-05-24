@@ -12,7 +12,7 @@ const currentQuestionP = document.getElementById("currentQuestion");
 const userAnswerInput = document.getElementById("userAnswer");
 const nextBtn = document.getElementById("nextBtn");
 const jokeOutput = document.getElementById("jokeOutput");
-
+// -----------------new code starts here--------------
 const addCustomJokeBtn = document.getElementById("addCustomJokeBtn");
 const customForm = document.getElementById("customJokeForm");
 const customNameInput = document.getElementById("customJokeName");
@@ -50,10 +50,9 @@ submitCustomJokeBtn.addEventListener("click", () => {
 
   const questions = inputs.map((inp) => ({
     text: inp.value.trim(),
-    validation: "any" // можно позже сделать выбор типа
+    validation: "any"
   }));
 
-  // Уникальный ID
   const allKeys = Object.keys(jokesData.jokes);
   const numericKeys = allKeys.map(k => parseInt(k)).filter(k => !isNaN(k));
   const newKey = Math.max(...numericKeys, 0) + 1;
@@ -68,7 +67,7 @@ submitCustomJokeBtn.addEventListener("click", () => {
   alert("✅ Joke added!");
   customForm.style.display = "none";
 });
-
+//--------new code ends here----------
 
 let errorMessage = document.createElement("p");
 errorMessage.style.color = "red";
