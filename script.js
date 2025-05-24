@@ -12,6 +12,62 @@ const currentQuestionP = document.getElementById("currentQuestion");
 const userAnswerInput = document.getElementById("userAnswer");
 const nextBtn = document.getElementById("nextBtn");
 const jokeOutput = document.getElementById("jokeOutput");
+// -----------------new code starts here--------------
+const addCustomJokeBtn = document.getElementById("addCustomJokeBtn");
+const customForm = document.getElementById("customJokeForm");
+const customNameInput = document.getElementById("customJokeName");
+const questionsContainer = document.getElementById("customQuestionsContainer");
+const customTemplate = document.getElementById("customTemplate");
+const submitCustomJokeBtn = document.getElementById("submitCustomJoke");
+
+addCustomJokeBtn.addEventListener("click", () => {
+  customForm.style.display = "block";
+  addCustomJokeBtn.style.display = "none";
+  customNameInput.value = "";
+  customTemplate.value = "";
+  questionsContainer.innerHTML = "";
+
+  for (let i = 0; i < 10; i++) {
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = `Question ${i + 1}`;
+    input.className = "custom-question-input";
+    input.required = true;
+    questionsContainer.appendChild(input);
+    questionsContainer.appendChild(document.createElement("br"));
+  }
+});
+
+submitCustomJokeBtn.addEventListener("click", () => {
+  const name = customNameInput.value.trim();
+  const template = customTemplate.value.trim();
+  const inputs = [...document.querySelectorAll(".custom-question-input")];
+
+  if (!name || !template || inputs.length !== 10 || inputs.some(inp => !inp.value.trim())) {
+    alert("Please fill in all 10 questions, name, and template.");
+    return;
+  }
+
+  const questions = inputs.map((inp) => ({
+    text: inp.value.trim(),
+    validation: "any"
+  }));
+
+  const allKeys = Object.keys(jokesData.jokes);
+  const numericKeys = allKeys.map(k => parseInt(k)).filter(k => !isNaN(k));
+  const newKey = Math.max(...numericKeys, 0) + 1;
+
+  jokesData.jokes[newKey] = {
+    name,
+    questions,
+    template
+  };
+
+  createJokeButtons();
+  alert("✅ Joke added!");
+  customForm.style.display = "none";
+});
+//--------new code ends here----------
 
 let errorMessage = document.createElement("p");
 errorMessage.style.color = "red";
@@ -26,7 +82,7 @@ let currentValidations = [];
 let currentTemplate = "";
 let questionIndex = 0;
 let currentAnswers = [];
-
+let newJoke = [];
 let isEditing = false;
 let editIndex = -1;
 
