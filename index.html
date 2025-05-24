@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ultimate Dad Joke Generator</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <h1>Ultimate Dad Joke Generator</h1>
 
-    <div id="jokeButtons"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ultimate Dad Joke Generator</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-    <div id="questionBox" style="display: none">
-      <p id="currentQuestion"></p>
-      <input type="text" id="userAnswer" autocomplete="off" />
-      <button id="nextBtn" class="btn" disabled>Next</button>
-    </div>
+<body>
+  <h1>Ultimate Dad Joke Generator</h1>
 
-    <div id="jokeOutput" style="display: none"></div>
-    <div>
-      <h2>📝 Overview</h2>
-      <table id="answerTable" class="answerTable">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Question</th>
-            <th>Your Answer</th>
-            <th>Edit</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+  <div id="jokeButtons"></div>
+  <div id="customJokeForm" style="display: none; margin-top: 20px;">
+    <h2>Add Your Own Joke</h2>
+    <label>Joke Name: <input type="text" id="customJokeName" /></label><br><br>
 
-    <script src="./script.js"></script>
-  </body>
+    <div id="customQuestionsContainer"></div>
+
+    <label>Template:<br>
+      <textarea id="customTemplate" rows="4" cols="60" placeholder="Use {0} to {9} for inserting answers"></textarea>
+    </label><br><br>
+
+    <button id="submitCustomJoke">Submit Joke</button>
+  </div>
+
+  <button id="addCustomJokeBtn">➕ Add Your Own Joke</button>
+
+  <div id="questionBox" style="display: none">
+    <p id="currentQuestion"></p>
+    <input type="text" id="userAnswer" autocomplete="off" />
+    <button id="nextBtn" class="btn" disabled>Next</button>
+  </div>
+
+  <div id="jokeOutput" style="display: none"></div>
+  <div>
+    <h2>📝 Overview</h2>
+    <table id="answerTable" class="answerTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Question</th>
+          <th>Your Answer</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

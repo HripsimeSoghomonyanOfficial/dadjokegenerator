@@ -9,11 +9,14 @@ body {
   animation: fadeIn 1s ease forwards;
 }
 
-#jokeButtons {
+#jokeButtons, #addCustomJokeBtn {
   margin-bottom: 1.5rem;
 }
+#addCustomJokeBtn {
+  background-color: red;
+}
 
-#jokeButtons button,
+#jokeButtons button, button, 
 #nextBtn {
   margin: 0.4rem;
   padding: 0.6rem 1.3rem;
